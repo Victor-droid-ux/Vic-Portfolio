@@ -50,6 +50,14 @@ const ReviewCard = ({ review }: prop) => {
             className='rounded-full'
           />
           </div>
+          <div>
+            <h1 className='text-lg font-bold'>
+              {name}
+            </h1>
+            <p className='text-base text-gray-500'>
+              {profession}
+            </p>
+          </div>
         </div>
       </div>
     </div>

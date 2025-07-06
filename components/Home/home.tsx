@@ -6,6 +6,8 @@ import Projects from './Projects/Projects';
 import Skills from './Skills/Skills'
 import Reviews from './Reviews/Reviews';
 import Sliders from './Reviews/Sliders'
+import Blog from './Blog/Blog';
+
 const Home = () => {
   return (
     <div className='overflow-hidden'>
@@ -16,6 +18,7 @@ const Home = () => {
         <Skills/>
         < Reviews/>
         < Sliders/>
+        <Blog/>
 
     </div>
   )

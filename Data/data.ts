@@ -242,5 +242,5 @@ export const blogs = [
 export const contactData = {
   phone: "+234(7064026008)",
   email: "onuhvictorali95@gmail.com",
-  address: "Akure , Nigeria",
+  address: "Akure, Nigeria",
 };
