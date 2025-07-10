@@ -1,34 +1,50 @@
 @import "tailwindcss";
 
-
-
 @layer components {
-    .nav__link {
-            position: relative;
-            font-size: 1rem; /* text-base */
-            font-weight: 500; /* font-medium */
-            width: fit-content; /* w-fit */
-            display: block;
-            color: #fff; /* text-white */
-        }
-        .nav__link::after {
-            display: block;
-            content: '';
-            position: absolute;
-            height: 3px;
-            background-color: #facc15; /* bg-yellow-400 */
-            width: 100%;
-            transform: scaleX(0);
-            transition: transform 300ms;
-            transform-origin: right;
-        }
-        .nav__link:hover::after {
-            transform: scaleX(1);
-    }
-    .text-bg {
-        background-image: linear-gradient(to right, #facc15 0%, #f59e0b); /* bg-yellow-400 to bg-yellow-500 */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-} 
+  .nav__link {
+    position: relative;
+    font-size: 1rem; /* text-base */
+    font-weight: 500; /* font-medium */
+    width: fit-content; /* w-fit */
+    display: block;
+    color: #fff; /* text-white */
+  }
+  .nav__link::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #facc15; /* bg-yellow-400 */
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 300ms;
+    transform-origin: right;
+  }
+  .nav__link:hover::after {
+    transform: scaleX(1);
+  }
+  .text-bg {
+    background-image: linear-gradient(
+      to right,
+      #facc15 0%,
+      #f59e0b
+    ); /* bg-yellow-400 to bg-yellow-500 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #44028f;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #c277fa;
+    border-radius: 5px;
+  }
+}
