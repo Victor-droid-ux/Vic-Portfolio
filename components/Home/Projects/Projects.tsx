@@ -15,7 +15,7 @@ const Projects = () => {
             data-aos="flip-left"
             data-aos-anchor-placement="top-center"
             data-aos-delay={`${i * 150}ms`}
-            className="bg-blue-950 p-6 rounded-lg hover:scale-105 transiton-all duration-300"
+            className="bg-blue-950 p-6 rounded-lg hover:scale-105 transition-all duration-300"
           >
             <Link href={project.url} target="blank">
               <img

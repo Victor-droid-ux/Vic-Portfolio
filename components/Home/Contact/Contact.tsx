@@ -11,7 +11,7 @@ const Contact = () => {
           <h2 className="text-3xl font-bold">Contact Us</h2>
           <p className="text-base mt-4">
             I'm here to help you with any questions or concerns you may have.
-            Please fill out the form below to get in touch with us.
+            Please fill out the form below to get in touch with me.
           </p>
           <p className="text-base mt-4">
             I will get back to you as soon as possible.
