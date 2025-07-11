@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-spring/web": "^10.0.1",
+    "@vercel/speed-insights": "^1.2.0",
     "aos": "^3.0.0-beta.6",
     "clsx": "^2.1.1",
     "motion": "^12.23.1",

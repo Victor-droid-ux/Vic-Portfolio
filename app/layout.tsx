@@ -7,7 +7,8 @@ import { ReactNode } from "react";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 import AnimatedCursor from "react-animated-cursor";
-// Optional: Set up your fonts if you like
+import { SpeedInsights } from "@vercel/speed-insights/next"; // ✅ Import added
+
 const font = Sora({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
@@ -18,20 +19,20 @@ const geistMono = Geist_Mono({
   variable: "--font-sora-mono",
 });
 
-// Optional metadata
 export const metadata: Metadata = {
   title: "VicDev Portfolio",
   description: "My Next.js Developer Portfolio",
 };
 
-// ✅ This is the root layout component Next.js needs
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
       className={`${font.variable} ${geistMono.variable} custom-scrollbar`}
     >
-      <body className="{font.className}">
+      <body className={font.className}>
+        {" "}
+        {/* ✅ Fix className typo (was a string) */}
         <div className="hidden md:block">
           <AnimatedCursor
             innerSize={8}
@@ -51,9 +52,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             }}
           />
         </div>
-
         <ResponsiveNav />
         {children}
+        <SpeedInsights /> {/* ✅ Added here */}
       </body>
     </html>
   );
