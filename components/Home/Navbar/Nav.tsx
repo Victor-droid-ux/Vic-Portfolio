@@ -38,7 +38,7 @@ const Nav = ({ openNav }: NavProps) => {
       <div className="flex items-center h-full justify-between w-[95%] bg-[#0f0715] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}
         <Image
-          src="/images/viclogo2.png"
+          src="/images/vicdevlogo2.png"
           alt="Logo"
           width={170}
           height={90}

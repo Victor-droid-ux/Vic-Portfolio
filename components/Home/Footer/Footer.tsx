@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="pt-16 pb-16 bg-[#0f0715] ">
       <div>
         <img
-          src="/images/viclogo2.png"
+          src="/images/vicdevlogo2.png"
           alt="logo"
           height={180}
           width={180}
